@@ -1,0 +1,133 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+
+body {
+	font-family: 'Lato', Arial, sans-serif;
+	text-align: center;
+	color: #24292d;
+	font-size: 18px;
+	line-height: 1.5;
+
+}
+header h1{ 
+	position: absolute;
+	/*top left bottom right}*/
+	top: 50%;
+	left:50%;
+	/*margin: -132px 0 0 -250px;}*/
+	/*IE way of moving objects to middle*/
+	/*new way is to use Transform*/
+	transform: translate(-50%, -50%);
+	/*moves up by half the height of the images and moves left by half the width ofthe image*/
+	/*sensitive to spaces*/
+}
+
+.scroll-btn {
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+}
+
+.content {
+	max-width: 720px;
+	/*like using on container*/
+	/*could also use padding*/
+	margin: 0 auto 0 auto
+}
+.content img {
+	
+	display: block;
+	/*anything at display block is no longer text-align centered*/
+	/*only things that are display inline are text-align centered by text-align center*/
+/*images will jump back in line using margin}*/
+
+	margin: 30px auto 30px auto;
+
+}
+p {
+	padding: 0 50px 0 50px;
+	margin: 20px auto 20px auto;
+
+}
+
+.title {
+	background: url(../images/mountain.jpg);
+}
+
+.announcement {
+	background-color: #e0e3e6;
+}
+.announcement img  {
+	padding: 0 0 30px 0;
+}
+
+.tri
+{
+	background: url(../images/blue-lagoon.jpg);
+}
+
+.portra {
+	background: url(../images/pool.jpg);
+}
+.neopan {
+	background: url(../images/forest.jpg);
+}
+.provia {
+	background: url(../images/boat.jpg);
+}
+.time {
+	background: url(../images/river.jpg);
+}
+.title,.tri, .portra, .neopan, .provia, .time {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-attachment: fixed;
+
+	/*anything that is position relative to this section, not the whole browser window*/
+	position: relative;
+	/*position relative works like normal except anything inside of this that has position absolute with its position based on this and not browser window*/
+
+
+}
+
+h2 { text-transform: uppercase;
+	padding: 20px 0 20px 0;
+}
+
+h3 {
+	padding: 10px 0 0 0;
+	color: #e0e3e6;
+	font-weight: 400;
+	font-size: 20px;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+		bottom: 15px;
+	}
+
+.contact{
+	padding: 30px 0 30px 0; 
+	text-align: center;
+}
+/*hidden on the page */
+label {
+	display: none;
+}
+
+input {
+	margin: 30px 0 30px 0;
+	width: 60%;
+	padding: 15px;
+	border: solid 2px #24292d;
+	background-color: #ffffff;
+	outline: none;
+	transition: all 0.8s;
+}
+
+input:hover {
+	border-color: #16b898;
+}
+
